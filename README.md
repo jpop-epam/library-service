@@ -11,7 +11,7 @@ Arnab Mondal
 |/lib                 | GET     | Login                    | GENERAL | Calls user service **GET /users/{user_id}**        |
 |/lib/books           | GET     | List of all books                       | GENERAL | Calls book service **GET /books URL**             |
 |/lib/books/{book_id} | GET     | Get a book's details | GENERAL | Calls book service **GET /books/{book_id} URL**    |
-|/lib/books/{book_id} | POST    | Add a new book                        | ADMIN  | Calls book service **POST /books/{book_id} URL**   |
+|/lib/books | POST    | Add a new book                        | ADMIN  | Calls book service **POST /books/{book_id} URL**   |
 |/lib/books/{book_id}	| DELETE  | Delete a book                        | ADMIN   | Delete book association with user in library table and calls book service **DELETE /books/{book_id} URL** |
 |/lib/users/{book_id} | GET     | List of all users | GENERAL | Calls user service **GET /users URL**  |
 |/lib/users/{user_id} | GET     | View user profile with all issued books    | GENERAL | Calls user service **GET /users/{user_id}**, fetches book ids on user_id  from library table and calls **GET /books/{book_id}** for all books. Displays consolidated data |
